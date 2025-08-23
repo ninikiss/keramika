@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tapochki - Каталог</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <a href="index.html" class="logo-link">
+                <svg class="logo-icon" viewBox="0 0 100 50" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20,35 L80,35 L85,15 L75,10 L65,15 L55,10 L35,10 L25,15 L15,10 L5,15 Z" stroke-width="2" fill="none"/>
+                    <path d="M20,35 L20,40 L80,40 L80,35" stroke-width="2" fill="none"/>
+                </svg>
+                <span class="logo-text">Tapochki</span>
+            </a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Выбрать тапочки</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+	<h1 class="catalog-title">Наш ассортимент</h1>
+        <div class="catalog" id="product-catalog">
+   		<div class="product-card">
+        		<img src="images/1.jpg" alt="Тапочки Мягкие" class="product-image">
+        		<div class="product-price">92 000</div>
+    		</div>
+    		<div class="product-card">
+        		<img src="images/2.jpg" alt="Тапочки Теплые" class="product-image">
+        		<div class="product-price">75 000</div>
+    		</div>
+    		<div class="product-card">
+        		<img src="images/3.jpg" alt="Тапочки Теплые" class="product-image">
+        		<div class="product-price">215 000</div>
+    		</div>
+    		<div class="product-card">
+        		<img src="images/4.jpg" alt="Тапочки Теплые" class="product-image">
+        		<div class="product-price">140 000</div>
+    		</div>
+    		<div class="product-card">
+        		<img src="images/5.jpg" alt="Тапочки Теплые" class="product-image">
+        		<div class="product-price">618 000</div>
+    		</div>
+    		<div class="product-card">
+        		<img src="images/6.jpg" alt="Тапочки Теплые" class="product-image">
+        		<div class="product-price">2 630 000</div>
+    		</div>
+    		<div class="product-card">
+        		<img src="images/7.jpeg" alt="Тапочки Теплые" class="product-image">
+        		<div class="product-price">25 000</div>
+    		</div>
+    		<div class="product-card">
+        		<img src="images/8.jpg" alt="Тапочки Теплые" class="product-image">
+        		<div class="product-price">350 000</div>
+    		</div>
+	</div>
+        <!-- Навигация по страницам каталога -->
+        <div class="pagination">
+            <a href="catalog.html" class="page-link active">1</a>
+            <a href="catalog-page2.html" class="page-link">2</a>
+            <!-- Добавьте ссылку на 3ю страницу, если товаров > 80 -->
+            <!-- <a href="catalog-page3.html" class="page-link">3</a> -->
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Tapochki. Все права на уют защищены.</p>
+    </footer>
+    
+</body>
+</html>
