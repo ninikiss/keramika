@@ -1,0 +1,254 @@
+/* Базовые сбросы и настройки */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333; /* Темно-серый цвет текста */
+    background-color: #fff; /* Белый фон */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Шапка */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3rem;
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0; /* Светло-серая линия */
+    flex-wrap: wrap;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo-icon {
+    width: 75px;
+    height: 35px;
+    margin-right: 15px;
+    stroke: #000;
+    animation: pulse 2s infinite ease-in-out;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.logo-text {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #000; /* Черный цвет текста логотипа */
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #555; /* Серый цвет ссылок */
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: #000; /* Черный цвет при наведении */
+}
+
+/* Основное содержимое */
+.main-content {
+    flex: 1;
+    padding: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Главная страница */
+.brand-story h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #000;
+}
+
+.brand-story h2 {
+    font-size: 1.8rem;
+    margin: 2rem 0 1rem 0;
+    color: #222;
+}
+
+.brand-story p, .brand-story li {
+    margin-bottom: 1rem;
+    color: #444;
+}
+
+.brand-story ul {
+    list-style-position: inside;
+    margin-left: 1rem;
+}
+
+.brand-story li {
+    margin-bottom: 0.5rem;
+}
+
+/* Каталог */
+.catalog-title {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #000;
+}
+
+.catalog {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.product-card {
+    background: #f8f8f8; /* Светло-серый фон карточки */
+    border: 1px solid #eee; /* Граница карточки */
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Это свойство обрежет изображение, чтобы оно заполнило блок */
+    display: block; /* Убирает лишнее пространство снизу */
+    background-color: #ddd; /* Серый фон на случай, если изображение не загрузится */
+}
+
+.product-price {
+    text-align: center;
+    padding: 0.5rem 1rem 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000; /* Черный цвет цены */;
+    font-family: 'Courier New', 'Times New Roman', serif
+}
+
+.product-name {
+    text-align: center;
+    padding: 0.5rem 1rem 0; /* Отступы: сверху 0.5rem, по бокам 1rem, снизу 0 */
+    font-size: 1rem;
+    font-weight: 600; /* Полужирный шрифт */
+    color: #333; /* Темно-серый цвет */
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    line-height: 1.3; /* Межстрочный интервал */
+}
+
+/* Пагинация */
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.page-link {
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #555;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.page-link:hover,
+.page-link.active {
+    background-color: #000;
+    color: #fff;
+    border-color: #000;
+}
+
+/* Контакты */
+.contacts h1 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    color: #000;
+}
+
+.contact-info {
+    margin-bottom: 2rem;
+}
+
+.contact-info p {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.contact-info a {
+    color: #000;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.map-container {
+    border: 1px solid #eee;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Подвал */
+.footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f0f0f0; /* Светло-серый фон подвала */
+    color: #666; /* Серый цвет текста */
+    border-top: 1px solid #e0e0e0;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    .main-nav ul {
+        margin-top: 1rem;
+        gap: 1rem;
+    }
+
+    .main-content {
+        padding: 1.5rem;
+    }
+
+    .catalog {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 1rem;
+    }
+}
